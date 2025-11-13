@@ -1,18 +1,18 @@
 {
-    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "scopeName": "source.hyperscript-html-underscore-attr.injection",
-    "injectionSelector": "L:meta.attribute.unrecognized._.html, meta.attribute.unrecognized.script.html, meta.attribute.data-x.data-script.html",
-    "name": "meta.embedded.line._hyperscript",
-    "patterns": [
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "source.hyperscript-html-underscore-attr.injection",
+  "injectionSelector": "L:text.html, L:text.html.django, L:django-html",
+  "name": "meta.embedded.line._hyperscript",
+  "patterns": [
+    {
+      "begin": "(?x) (?<=\\b(_|script|data-x-data-script)\\s*=\\s*)([\\\"'])",
+      "end": "\\2",
+      "name": "meta.embedded.line._hyperscript",
+      "patterns": [
         {
-            "begin": "\\G([\"'])",
-            "end": "\\1",
-            "name": "meta.embedded.line._hyperscript.TESTT",
-            "patterns": [
-                {
-                    "include": "source._hyperscript"
-                }
-            ]
+          "include": "source._hyperscript"
         }
-    ]
+      ]
+    }
+  ]
 }

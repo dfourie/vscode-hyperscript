@@ -43,7 +43,7 @@
                 "injectTo": [
                     "text.html",
                     "meta.embedded.block.html",
-                    "text.html.django"
+                    "django-html"
                 ],
                 "embeddedLanguages": {
                     "meta.embedded.line._hyperscript": "_hyperscript"
@@ -55,7 +55,7 @@
                 "injectTo": [
                     "text.html",
                     "meta.embedded.block.html",
-                    "text.html.django"
+                    "django-html"
                 ],
                 "embeddedLanguages": {
                     "meta.embedded.block._hyperscript": "_hyperscript"
