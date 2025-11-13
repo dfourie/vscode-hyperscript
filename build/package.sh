@@ -4,12 +4,7 @@ set -e
 version=$(jq <package.json '.version')
 
 build_vscode() {
-	if ! which vsce >/dev/null
-	then
-		echo "Please install vsce to build VSCode package: https://github.com/microsoft/vscode-vsce"
-	fi
-
-	vsce package -o dist/vscode-hyperscript-org-${version}.vsix
+	npx @vscode/vsce package -o dist/vscode-hyperscript-org-${version}.vsix
 }
 
 build_subl() {
