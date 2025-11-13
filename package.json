@@ -42,7 +42,8 @@
             {
                 "injectTo": [
                     "text.html",
-                    "meta.embedded.block.html"
+                    "meta.embedded.block.html",
+                    "text.html.django"
                 ],
                 "embeddedLanguages": {
                     "meta.embedded.line._hyperscript": "_hyperscript"
@@ -53,7 +54,8 @@
             {
                 "injectTo": [
                     "text.html",
-                    "meta.embedded.block.html"
+                    "meta.embedded.block.html",
+                    "text.html.django"
                 ],
                 "embeddedLanguages": {
                     "meta.embedded.block._hyperscript": "_hyperscript"
@@ -75,6 +77,10 @@
         "snippets": [
             {
                 "language": "_hyperscript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "django-html",
                 "path": "./snippets/snippets.json"
             }
         ]
