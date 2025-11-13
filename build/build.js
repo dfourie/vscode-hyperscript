@@ -6,10 +6,17 @@
 
   const input = path.join(
     __dirname,
-    "../syntaxes/_hyperscript.tmLanguage.yaml"
+
+    "../hyperscript-tmlanguage/_hyperscript.tmLanguage.yaml"
   );
-  const subl = path.join(__dirname, "../syntaxes/_hyperscript.tmLanguage");
-  const vsc = path.join(__dirname, "../syntaxes/_hyperscript.tmLanguage.json");
+  const subl = path.join(
+    __dirname,
+    "../hyperscript-tmlanguage/_hyperscript.tmLanguage"
+  );
+  const vsc = path.join(
+    __dirname,
+    "../hyperscript-tmlanguage/_hyperscript.tmLanguage.json"
+  );
 
   const grammar = yaml.load(await fs.readFile(input, { encoding: "utf-8" }));
 
